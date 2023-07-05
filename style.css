@@ -1,0 +1,491 @@
+
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+/* :root{
+    --navbar-height:59px;
+} */
+
+/******************************** UTILITY Classes ***********************************/
+.viewWidth{
+    width:100vw;
+}
+.primary-h{
+    font-size: 2.2rem;
+    padding:12px;
+    text-align: center;
+}
+
+.secondary-h{
+    font-size: 1.5rem;
+    padding:12px;
+    text-align: center;
+}
+.btn{
+    background-color: bisque;
+    padding:5px 2px;
+    margin: 2px 5px;
+    border: 2px solid rgb(109, 85, 85);
+    border-radius: 7px;
+    font-family:'Lato', sans-serif;
+    font-size:2rem;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background-color: bisque;
+    box-shadow: 6px 3px 3px white;
+}
+
+.center{
+    text-align:center;
+}
+
+.flex-column{
+    display:flex;
+    flex-direction: column;
+}
+.flex-column-center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+}
+.flex-row{
+    display:flex;
+    flex-direction: row;
+}
+/* .flex-row-center{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+} */
+.txtColBlack{
+    color:black;
+}
+.txtColWhite{
+    color:white;
+}
+.bgColBlack{
+    background-color:black;
+}
+.bgColBlue{
+    background-color:rgb(4, 4, 75);
+}
+
+.margin-top-bottom-5{
+    margin:5px auto;
+}
+.margin-left-right-5{
+    margin: auto 5px;
+}
+
+.margin-top-bottom-10{
+    margin:5px auto;
+}
+.margin-left-right-10{
+    margin: auto 5px;
+}
+
+.navbar-sticky {
+    position: fixed;
+    /* position: -webkit-sticky; */
+    top: 0;
+}
+/********************* HEADER and HERO CONTAINER *************************/
+#header-hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px 20px;
+    /* width:100vw; */
+    /* background-size: 100%; */
+    background:url(../img/img07.jpg) no-repeat center center/ cover;
+    background-color:aquamarine */
+}
+
+#header-hero-container>h1{
+    font-size:2.5rem;
+    padding:20px;
+    text-align:center;
+    font-family: 'Bree Serif', serif;
+    color:white;
+}
+
+#header-hero-container p{
+    font-size:1.5rem;
+    text-align:center;
+    color:white;
+}
+
+/* Navigation Bar - Logo and images */
+#logo{
+    margin: 10px 30px;
+}
+
+#logo img{
+    margin: 5px 6px;
+    height: 33px;
+}
+
+/* Navigation Bar: List */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    width:100%;
+    /* background-color: red; */
+ }
+
+#navbar ul{
+    display: flex;
+    margin-right: 100px;
+}
+
+#navbar ul li {
+    list-style:none;
+    margin: 0px 20px 0px 10px;
+    padding: 10px;
+    width:100%;
+    text-align:center
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size:1.2rem;
+    color:rgb(4, 0, 12);
+    background-color: rgb(194, 222, 248);
+    width:100%;
+    transition: 0.7s;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: rgb(207, 204, 160);
+    box-shadow: 3px 3px 3px rgb(58, 54, 3);    
+}
+
+/***************************** SERVICES CONTAINER ****************************/
+#services{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    /* width:100vw; */
+    padding:0px 20%;
+    color:rgb(7, 7, 7);
+    background-color: rgb(207, 204, 160);
+}
+
+#services .box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content:center; */
+    align-items: center;
+    margin: 0px 30px;
+    padding:5px 20px;
+    background-color: rgb(240, 245, 253);
+    border: 3px solid rgb(141, 143, 245);
+    border-radius:7px;
+}
+
+#services .box img{
+    /* display:block; */
+    width:281px;
+    height:191px;
+    object-fit:cover;
+    border: 2px solid black;
+    border-radius:7px
+}
+
+/***************************** CLIENTS CONTAINER ****************************/
+
+#clients{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(235, 245, 180);;
+}
+.logo-client {
+    display:flex;
+    justify-content: center;
+    min-width:30%; /* this will spread 6 objects in two rows with wrap*/
+}
+.logo-client img{
+    padding:10px;
+    width:150px;
+    height:auto;
+    object-fit:cover;
+}
+
+/***************************** ABOUT US CONTAINER ****************************/
+#aboutus-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    width:100%;
+    padding:0px 20px;
+ }
+ #aboutus-row-1{
+    background-color: rgb(242, 250, 250);
+    margin:10px 10%;
+    padding: 10px;
+    border: 3px solid rgb(141, 143, 245);
+    border-radius: 7px;
+    text-align:justify;
+ }
+ #aboutus-row-2{
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    align-items:center;
+    /* width:100%; */
+    /* margin:0px 20%; */
+    padding:0px 20%;
+    background-color: rgb(82, 71, 92);
+ }
+ .hrbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-content:center; */
+    align-items: center;    
+    background-color: rgb(240, 245, 253);;
+    border: 1px solid rgb(141, 143, 245);
+    border-radius:7px;
+    margin:10px 10px;
+    text-align: center;
+    font-size:1.2rem;
+    width:100%;
+}
+.hrbox img{
+    width:281px;
+}
+
+/***************************** CONTACT FORM CONTAINER ****************************/
+#contact-box{
+    background-color:rgb(244, 249, 252);
+    border: 1px solid rgba(1, 23, 44, 0.9);
+    border-radius:14px;
+    font-size:1.2rem;
+    width:500px;
+    margin: auto;
+}
+#contact-box form{
+    width:90%;
+    margin:12px;
+} 
+#contact-box label{
+    padding:2px;
+    margin-left: 7px;
+}
+#contact-box input{
+    padding:5px;
+    margin-left: 7px;
+    width:100%;
+    height:30px;
+    font-size:1.2rem;
+    color:rgb(32, 32, 240)
+}
+#contact-box textarea{
+    margin-left: 7px;
+    padding:5px;
+    width:100%;
+     font-size:1.2rem;
+}
+.submission{
+    display:flex;
+    justify-content: center;
+    margin:7px;
+}
+#btn-submit{
+    padding:5px;
+    margin-bottom:10px; 
+    width:40%;
+    border: 4px solid rgb(48, 27, 1,0.9);
+    border-radius:14px;
+    cursor:pointer
+}
+
+/************************* FOOTER CONTAINER **************************/
+#footer-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+    color:rgb(247, 191, 119);
+    padding:7px;
+    margin:10px 0px;
+    width:100%;
+}
+
+#footer1stRow{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#footer2ndRow{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    margin:10px;
+}
+.footer-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#footer-container a{
+    color:rgb(247, 191, 119);
+ }
+
+
+/*********************************************************************/
+/*********************************************************************/
+/*********************************************************************/
+/***************** RESPONSIVE USING MEDIA QUERIES ********************/
+
+/********************* HEADER CONTAINER *************************/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 1120px) {
+  
+    /* Navigation Bar: List */
+    #navbar{
+        position:relative;
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar ul{
+        display: flex;
+        margin-right: 10px;
+        margin-bottom:50px;
+    }
+    #navbar ul li {
+        list-style:none;
+        margin: 0px 7px 0px 7px;
+        padding: 3px;
+        width:100%;
+        text-align:center
+    }
+    #navbar ul li a{
+        font-size:.8rem;
+        font-weight:bold;
+        padding: 3px 5px;
+    }    
+     /********************* HERO CONTAINER *************************/
+   
+
+/***************************** SERVICES CONTAINER ****************************/
+#services{
+    flex-wrap: wrap;
+}
+#services .box img{
+    width:400px;
+    height:auto;
+}
+/********************* CLIENTS CONTAINER *************************/
+
+#clients {
+    flex-wrap: wrap;
+}
+#aboutus-row-1{
+    margin:10px;
+}
+#aboutus-row-2{
+    flex-wrap: wrap;
+    margin: 10px;
+}
+#aboutus-row-2 img{
+    width:400px;
+    height:auto;
+}
+/***************************** CLIENTS CONTAINER ****************************/
+#contact-box{
+    width:80%;
+    margin: auto;
+}
+/*******************************************************************************/
+@media only screen and (max-width: 460px) {
+#services .box img{
+    width:234px;
+    height:auto;
+}
+#aboutus-row-2 img{
+    width:234px;
+    height:auto;
+}
+
+#contact-box form{
+    width:90%;
+    margin:2px;
+} 
+#contact-box{
+    width:80%;
+    margin: 7px auto;
+    font-size:0.8rem
+}
+#contact-box input{
+    width:100%;
+    height:15px;
+    margin-left: 2px;
+    font-size:0.8rem;
+    font-weight: bold;
+}
+#contact-box label{
+    width:100%;
+    height:15px;
+    margin-left: 2px;
+    font-size:0.8rem;
+    font-weight: bold;
+}
+}
+/***************************** CLIENTS CONTAINER ****************************/
+@media only screen and (max-width: 324px) {
+#footer-container{
+        padding:2px;
+        margin:auto;
+    }    
+.hide-in-mobile{
+    display:none;
+}
+
+/***************************** CONTACT FORM CONTAINER ****************************/
+} /*1st media query ends here    ;
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
